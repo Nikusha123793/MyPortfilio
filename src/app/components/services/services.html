@@ -1,0 +1,222 @@
+<!-- services.component.html -->
+<section id="services" class="services-section">
+  <div class="services-container">
+    <!-- Background Elements (Home-ის მსგავსი) -->
+    <div class="background-elements">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="floating-shape shape-4"></div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="services-header" data-aos="fade-down" data-aos-duration="800">
+      <h2 class="section-title">
+        My <span class="highlight">Services</span>
+      </h2>
+      <div class="section-divider" data-aos="zoom-in" data-aos-delay="400"></div>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="600">
+        Comprehensive web development solutions tailored to bring your digital vision to life
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-grid">
+      <!-- Frontend Development -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card-header">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M12 18L12 12M12 12L15 15M12 12L9 15" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M4 6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V6Z"
+                stroke="currentColor" stroke-width="2" />
+              <path d="M9 4L15 20" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="service-title">Frontend Development</h3>
+        </div>
+        <p class="service-description">
+          Building responsive, interactive, and high-performance web applications using modern frameworks like Angular,
+          with focus on user experience and clean code architecture.
+        </p>
+        <div class="service-features">
+          <span class="feature">Angular Development</span>
+          <span class="feature">Responsive Design</span>
+          <span class="feature">Performance Optimization</span>
+          <span class="feature">Cross-browser Compatibility</span>
+        </div>
+        <div class="service-footer">
+          <div class="tech-stack">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <button class="service-cta" (click)="scrollToSection('contact')">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card-header">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M14 2C14 2 14.849 3.778 15.5 5.5C16.151 7.222 16 10 16 10" stroke="currentColor"
+                stroke-width="2" />
+              <path d="M17 7C17 7 18.778 6.151 20.5 6.5C22.222 6.849 22 9 22 9" stroke="currentColor"
+                stroke-width="2" />
+              <path d="M12 9C12 9 13.778 8.151 15.5 8.5C17.222 8.849 19 10 19 10" stroke="currentColor"
+                stroke-width="2" />
+              <path
+                d="M10 22L8.5 20.5L7 22L5.5 20.5L4 22V16C4 15.4696 4.21071 14.9609 4.58579 14.5858C4.96086 14.2107 5.46957 14 6 14H18C18.5304 14 19.0391 14.2107 19.4142 14.5858C19.7893 14.9609 20 15.4696 20 16V22L18.5 20.5L17 22L15.5 20.5L14 22"
+                stroke="currentColor" stroke-width="2" />
+              <path d="M10 14L11 11L13 10L11 9L10 6L9 9L7 10L9 11L10 14Z" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="service-title">UI/UX Design</h3>
+        </div>
+        <p class="service-description">
+          Creating intuitive and engaging user interfaces that provide seamless experiences across all devices,
+          with attention to accessibility and modern design principles.
+        </p>
+        <div class="service-features">
+          <span class="feature">User Interface Design</span>
+          <span class="feature">User Experience</span>
+          <span class="feature">Wireframing</span>
+          <span class="feature">Prototyping</span>
+        </div>
+        <div class="service-footer">
+          <div class="tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Adobe XD</span>
+            <span class="tech-tag">CSS/Sass</span>
+          </div>
+          <button class="service-cta" (click)="scrollToSection('contact')">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Web Applications -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+        <div class="card-header">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                stroke="currentColor" stroke-width="2" />
+              <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
+              <path
+                d="M12 3C14.5013 5.73835 15.9228 9.29203 16 13C15.9228 16.708 14.5013 20.2616 12 23C9.49872 20.2616 8.07725 16.708 8 13C8.07725 9.29203 9.49872 5.73835 12 3Z"
+                stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="service-title">Web Applications</h3>
+        </div>
+        <p class="service-description">
+          Developing scalable and maintainable web applications with modern architecture patterns,
+          integrating with APIs and databases to create full-featured digital solutions.
+        </p>
+        <div class="service-features">
+          <span class="feature">Single Page Applications</span>
+          <span class="feature">API Integration</span>
+          <span class="feature">Real-time Features</span>
+          <span class="feature">Database Integration</span>
+        </div>
+        <div class="service-footer">
+          <div class="tech-stack">
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">PWA</span>
+          </div>
+          <button class="service-cta" (click)="scrollToSection('contact')">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Maintenance & Support -->
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="800">
+        <div class="card-header">
+          <div class="service-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" />
+              <path
+                d="M12 3C13.1819 3 14.3522 3.23279 15.4442 3.68508C16.5361 4.13738 17.5282 4.80031 18.364 5.63604C19.1997 6.47177 19.8626 7.46392 20.3149 8.55585C20.7672 9.64778 21 10.8181 21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3Z"
+                stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="service-title">Maintenance & Support</h3>
+        </div>
+        <p class="service-description">
+          Providing ongoing maintenance, updates, and technical support to ensure your web applications
+          remain secure, up-to-date, and perform optimally over time.
+        </p>
+        <div class="service-features">
+          <span class="feature">Regular Updates</span>
+          <span class="feature">Bug Fixing</span>
+          <span class="feature">Performance Monitoring</span>
+          <span class="feature">Security Updates</span>
+        </div>
+        <div class="service-footer">
+          <div class="tech-stack">
+            <span class="tech-tag">Support</span>
+            <span class="tech-tag">Updates</span>
+            <span class="tech-tag">Monitoring</span>
+          </div>
+          <button class="service-cta" (click)="scrollToSection('contact')">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="services-cta" data-aos="fade-up" data-aos-delay="1000">
+      <div class="cta-content">
+        <h3 class="cta-title">Ready to Bring Your Project to Life?</h3>
+        <p class="cta-description">
+          Let's discuss your project requirements and create something amazing together.
+          I'm committed to delivering high-quality solutions that exceed your expectations.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary" (click)="scrollToSection('contact')">
+            <span>Start a Project</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="btn btn-secondary" (click)="scrollToSection('projects')">
+            <span>View My Work</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M2 12L7 12L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M16 7L21 12L16 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,56 @@
+<!-- header.html -->
+<header data-aos="fade-down" data-aos-duration="800">
+  <a class="logo" href="#home">
+    <div class="logo-container">
+      <img src="/assets/images/Myphoto.png.jpg" alt="logo">
+      <div class="logo-overlay"></div>
+    </div>
+    <h3>Nikoloz Tsertsvadze</h3>
+  </a>
+
+  <!-- Desktop Navigation -->
+  <nav>
+    <ul>
+      <li><a (click)="scrollToSection('home')">Home</a></li>
+      <li><a (click)="scrollToSection('about')">About</a></li>
+      <li><a (click)="scrollToSection('skills')">Skills</a></li>
+      <li><a (click)="scrollToSection('services')">Services</a></li>
+      <li><a (click)="scrollToSection('projects')">Projects</a></li>
+      <li><a (click)="scrollToSection('certificates')">Certificates</a></li>
+      <li><a (click)="scrollToSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Burger Menu -->
+  <div class="burger-menu" (click)="toggleMenu()" [class.active]="isMenuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" [class.active]="isMenuOpen">
+    <div class="mobile-nav-header">
+      <div class="mobile-logo">
+        <div class="logo-container">
+          <img src="/assets/images/Myphoto.png.jpg" alt="logo">
+          <div class="logo-overlay"></div>
+        </div>
+        <h3>Nikoloz Tsertsvadze</h3>
+      </div>
+      <div class="nav-divider"></div>
+    </div>
+    <ul>
+      <li><a (click)="scrollToSection('home')">Home</a></li>
+      <li><a (click)="scrollToSection('about')">About</a></li>
+      <li><a (click)="scrollToSection('process')">Process</a></li>
+      <li><a (click)="scrollToSection('services')">Services</a></li>
+      <li><a (click)="scrollToSection('projects')">Projects</a></li>
+      <li><a (click)="scrollToSection('certificates')">Certificates</a></li>
+      <li><a (click)="scrollToSection('contact')">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" [class.active]="isMenuOpen" (click)="toggleMenu()"></div>
+</header>
