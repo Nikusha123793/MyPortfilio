@@ -5,15 +5,14 @@ import { Contact } from './components/contact/contact';
 import { Certificates } from './components/certificates/certificates';
 import { Projects } from './components/projects/projects';
 import { Services } from './components/services/services';
-import { Skills } from './components/skills/skills';
 import { About } from './components/about/about';
 import { Process } from './components/process/process';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: Home },
   { path: 'about', component: About },
-  {path: 'process', component: Process},
+  { path: 'process', component: Process },
   { path: 'services', component: Services },
   { path: 'projects', component: Projects },
   { path: 'certificates', component: Certificates },

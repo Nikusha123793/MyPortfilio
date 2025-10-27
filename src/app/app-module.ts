@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Home } from './components/home/home';
 import { About } from './components/about/about';
-import { Skills } from './components/skills/skills';
 import { Services } from './components/services/services';
 import { Projects } from './components/projects/projects';
 import { Certificates } from './components/certificates/certificates';
@@ -21,7 +20,6 @@ import { Process } from './components/process/process';
     Header,
     Home,
     About,
-    Skills,
     Services,
     Projects,
     Certificates,
