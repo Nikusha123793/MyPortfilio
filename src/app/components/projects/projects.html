@@ -1,1 +1,212 @@
-<p>projects works!</p>
+<!-- projects.component.html -->
+<section id="projects" class="projects-section">
+  <div class="projects-container">
+    <!-- Background Elements -->
+    <div class="background-elements">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="floating-shape shape-4"></div>
+      <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="projects-header" data-aos="fade-down" data-aos-duration="800">
+      <h2 class="section-title">
+        My <span class="highlight">Projects</span>
+      </h2>
+      <div class="section-divider" data-aos="zoom-in" data-aos-delay="400"></div>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="600">
+        A showcase of my recent work and creative solutions
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <div class="project-image-container">
+          <img src="/assets/images/project1.jpg" alt="Portfolio Website" class="project-image">
+          <div class="project-badge">Featured</div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-description">
+            A modern, responsive portfolio website built with Angular and TypeScript.
+            Features smooth animations, dark/light theme, and optimized performance.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">SCSS</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="project-view-btn">
+              <span>View Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="project-image-container">
+          <img src="/assets/images/project2.jpg" alt="E-Commerce Dashboard" class="project-image">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">E-Commerce Dashboard</h3>
+          <p class="project-description">
+            A comprehensive admin dashboard for e-commerce management with real-time analytics,
+            product management, and order tracking system.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Chart.js</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="project-view-btn">
+              <span>View Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <div class="project-image-container">
+          <img src="/assets/images/project3.jpg" alt="Weather App" class="project-image">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Weather Application</h3>
+          <p class="project-description">
+            A beautiful weather app with location-based forecasts, interactive maps,
+            and detailed weather information using modern APIs and responsive design.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">API Integration</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="project-view-btn">
+              <span>View Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Additional Projects (Hidden by default) -->
+    <div class="additional-projects" [class.active]="showAllProjects">
+      <div class="projects-grid">
+        <!-- Project 4 -->
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800">
+          <div class="project-image-container">
+            <img src="/assets/images/project4.jpg" alt="Task Manager" class="project-image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Task Management App</h3>
+            <p class="project-description">
+              A productivity app for task management with drag-and-drop functionality,
+              deadline tracking, and team collaboration features.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">RxJS</span>
+              <span class="tech-tag">Local Storage</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-view-btn">
+                <span>View Project</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div class="project-image-container">
+            <img src="/assets/images/project5.jpg" alt="Blog Platform" class="project-image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Blog Platform</h3>
+            <p class="project-description">
+              A modern blog platform with rich text editing, categories, tags,
+              and social sharing features built with a focus on user experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Rich Text</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-view-btn">
+                <span>View Project</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="project-image-container">
+            <img src="/assets/images/project6.jpg" alt="Fitness Tracker" class="project-image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Fitness Tracker</h3>
+            <p class="project-description">
+              A mobile-friendly fitness tracking application with workout plans,
+              progress charts, and achievement system to help users reach their fitness goals.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Chart.js</span>
+              <span class="tech-tag">PWA</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-view-btn">
+                <span>View Project</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load More Button -->
+    <div class="projects-cta" data-aos="fade-up" data-aos-delay="800">
+      <button class="custom-btn secondary-btn" (click)="loadMoreProjects()">
+        <span>{{ showAllProjects ? 'Show Less Projects' : 'View More Projects' }}</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
