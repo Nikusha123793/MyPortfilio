@@ -1,4 +1,3 @@
-// Update your projects.ts file
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,7 +9,7 @@ import { Component } from '@angular/core';
 export class Projects {
   showAllProjects = false;
 
-  loadMoreProjects() {
+  toggleProjects() {
     this.showAllProjects = !this.showAllProjects;
 
     // Refresh AOS animations when new content is loaded

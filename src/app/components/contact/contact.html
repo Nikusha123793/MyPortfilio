@@ -1,1 +1,181 @@
-<p>contact works!</p>
+<!-- contact.component.html -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <!-- Background Elements -->
+    <div class="background-elements">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="floating-shape shape-4"></div>
+      <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="contact-header" data-aos="fade-down" data-aos-duration="800">
+      <h2 class="section-title">
+        Get In <span class="highlight">Touch</span>
+      </h2>
+      <div class="section-divider" data-aos="zoom-in" data-aos-delay="400"></div>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="600">
+        Let's discuss your project and bring your ideas to life
+      </p>
+    </div>
+
+    <!-- Contact Content -->
+    <div class="contact-content">
+      <!-- Left Side - Contact Form -->
+      <div class="contact-form-side" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+        <div class="form-container">
+          <h3 class="form-title">Send Me a Message</h3>
+          <p class="form-description">
+            I'm always interested in new opportunities and exciting projects. 
+            Fill out the form below and I'll get back to you within 24 hours.
+          </p>
+
+          <form (ngSubmit)="submitForm()" #contactForm="ngForm" class="contact-form">
+            <!-- Name Field -->
+            <div class="form-group">
+              <label for="name" class="form-label">
+                Full Name *
+              </label>
+              <input type="text" id="name" name="name" [(ngModel)]="formData.name" required class="form-input"
+                placeholder="Enter your full name">
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+              <label for="phone" class="form-label">
+                Phone Number
+              </label>
+              <input type="tel" id="phone" name="phone" [(ngModel)]="formData.phone" class="form-input"
+                placeholder="Enter your phone number">
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+              <label for="email" class="form-label">
+                Email Address *
+              </label>
+              <input type="email" id="email" name="email" [(ngModel)]="formData.email" required class="form-input"
+                placeholder="Enter your email address">
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+              <label for="message" class="form-label">
+                Your Message *
+              </label>
+              <textarea id="message" name="message" [(ngModel)]="formData.message" required class="form-textarea"
+                rows="5" placeholder="Tell me about your project, timeline, and budget..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn" [disabled]="isSubmitting">
+              <span *ngIf="!isSubmitting">Send Message</span>
+              <span *ngIf="isSubmitting">Sending...</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+
+            <!-- Status Message -->
+            <div *ngIf="submitMessage" class="status-message" [class.success]="isSuccess" [class.error]="!isSuccess">
+              <i [class]="isSuccess ? 'fas fa-check-circle' : 'fas fa-exclamation-circle'"></i>
+              {{ submitMessage }}
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Side - Contact Info -->
+      <div class="contact-info-side" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+        <div class="info-container">
+          <h3 class="info-title">Contact Information</h3>
+          <p class="info-description">
+            Feel free to reach out through any of these channels.
+            I typically respond within 24 hours.
+          </p>
+
+          <!-- Contact Methods -->
+          <div class="contact-methods">
+            <!-- Email -->
+            <div class="contact-method" data-aos="zoom-in" data-aos-delay="600">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="method-content">
+                <h4 class="method-title">Email</h4>
+                <a href="mailto:cercvadzenikoloz95@gmail.com" class="method-value">cercvadzenikoloz95@gmail.com</a>
+                <p class="method-description">I'll respond as soon as possible</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-method" data-aos="zoom-in" data-aos-delay="800">
+              <div class="method-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="method-content">
+                <h4 class="method-title">Phone</h4>
+                <a href="tel:+995595073230" class="method-value">+995 595 073 230</a>
+                <p class="method-description">Mon - Fri, 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <!-- <div class="contact-method" data-aos="zoom-in" data-aos-delay="1000">
+              <div class="method-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="method-content">
+                <h4 class="method-title">Location</h4>
+                <span class="method-value">Tbilisi, Georgia</span>
+                <p class="method-description">Available for remote work worldwide</p>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-section" data-aos="fade-up" data-aos-delay="1200">
+            <h4 class="social-title">Follow Me On Social Media</h4>
+            <div class="social-links">
+              <!-- GitHub -->
+              <a href="https://github.com/yourusername" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com/yourusername" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://facebook.com/yourusername" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+              </a>
+
+              <!-- Twitter -->
+              <a href="https://twitter.com/yourusername" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+              </a>
+
+              <!-- Discord -->
+              <a href="https://discord.gg/yourinvite" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

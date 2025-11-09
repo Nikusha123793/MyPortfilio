@@ -1,4 +1,3 @@
-<!-- projects.component.html -->
 <section id="projects" class="projects-section">
   <div class="projects-container">
     <!-- Background Elements -->
@@ -21,33 +20,30 @@
       </p>
     </div>
 
-    <!-- Projects Grid -->
+    <!-- Main Projects Grid (First 3 projects) -->
     <div class="projects-grid">
       <!-- Project 1 -->
       <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         <div class="project-image-container">
-          <img src="/assets/images/project1.jpg" alt="Portfolio Website" class="project-image">
-          <div class="project-badge">Featured</div>
+          <img src="/assets/images/TrainsTicket.png" alt="Portfolio Website" class="project-image">
         </div>
         <div class="project-content">
-          <h3 class="project-title">Portfolio Website</h3>
+          <h3 class="project-title">Booking-TrainsTicket</h3>
           <p class="project-description">
-            A modern, responsive portfolio website built with Angular and TypeScript.
-            Features smooth animations, dark/light theme, and optimized performance.
+            A modern, responsive Tickets Bookiung website built with Angular and TypeScript.
+            Features smooth animations,and optimized performance.
           </p>
           <div class="project-tech">
             <span class="tech-tag">Angular</span>
             <span class="tech-tag">TypeScript</span>
-            <span class="tech-tag">SCSS</span>
+            <span class="tech-tag">API Integration</span>
+            <span class="tech-tag">Responsive</span>
           </div>
           <div class="project-actions">
-            <a href="#" class="project-view-btn">
+            <button href="#" class="project-view-btn">
               <span>View Project</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </a>
+              <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -55,27 +51,24 @@
       <!-- Project 2 -->
       <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
         <div class="project-image-container">
-          <img src="/assets/images/project2.jpg" alt="E-Commerce Dashboard" class="project-image">
+          <img src="/assets/images/OnlineShop.png" alt="E-Commerce Dashboard" class="project-image">
         </div>
         <div class="project-content">
-          <h3 class="project-title">E-Commerce Dashboard</h3>
+          <h3 class="project-title">OnlineShop</h3>
           <p class="project-description">
-            A comprehensive admin dashboard for e-commerce management with real-time analytics,
-            product management, and order tracking system.
+            OnlineShop is a dynamic e-commerce dashboard that provides real-time analytics,
+            sales tracking, and inventory management using Angular and Firebase.
           </p>
           <div class="project-tech">
-            <span class="tech-tag">Angular</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">Chart.js</span>
+            <span class="tech-tag">Html5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">js</span>
           </div>
           <div class="project-actions">
-            <a href="#" class="project-view-btn">
+            <button href="#" class="project-view-btn">
               <span>View Project</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </a>
+              <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -83,59 +76,53 @@
       <!-- Project 3 -->
       <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
         <div class="project-image-container">
-          <img src="/assets/images/project3.jpg" alt="Weather App" class="project-image">
+          <img src="/assets/images/TopCars.png" alt="Weather App" class="project-image">
         </div>
         <div class="project-content">
-          <h3 class="project-title">Weather Application</h3>
+          <h3 class="project-title">TopCars</h3>
           <p class="project-description">
-            A beautiful weather app with location-based forecasts, interactive maps,
-            and detailed weather information using modern APIs and responsive design.
+            TopCars website
           </p>
           <div class="project-tech">
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">API Integration</span>
+            <span class="tech-tag">HTML5</span>
             <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Responsive</span>
           </div>
           <div class="project-actions">
-            <a href="#" class="project-view-btn">
+            <button href="#" class="project-view-btn">
               <span>View Project</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </a>
+              <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-     <!-- Additional Projects (Hidden by default) -->
+    <!-- Additional Projects (Hidden by default) -->
     <div class="additional-projects" [class.active]="showAllProjects">
       <div class="projects-grid">
         <!-- Project 4 -->
-        <div class="project-card" data-aos="fade-up" data-aos-duration="800">
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
           <div class="project-image-container">
-            <img src="/assets/images/project4.jpg" alt="Task Manager" class="project-image">
+            <img src="/assets/images/NftMarketplace.png" alt="Task Manager" class="project-image">
           </div>
           <div class="project-content">
-            <h3 class="project-title">Task Management App</h3>
+            <h3 class="project-title">NftMarketplace</h3>
             <p class="project-description">
-              A productivity app for task management with drag-and-drop functionality,
-              deadline tracking, and team collaboration features.
+              NFTmarketplace wEBSITE
             </p>
             <div class="project-tech">
-              <span class="tech-tag">Angular</span>
-              <span class="tech-tag">RxJS</span>
-              <span class="tech-tag">Local Storage</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive</span>
             </div>
             <div class="project-actions">
-              <a href="#" class="project-view-btn">
+              <button href="#" class="project-view-btn">
                 <span>View Project</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </a>
+                <i class="fas fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -157,19 +144,16 @@
               <span class="tech-tag">Rich Text</span>
             </div>
             <div class="project-actions">
-              <a href="#" class="project-view-btn">
+              <button href="#" class="project-view-btn">
                 <span>View Project</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </a>
+                <i class="fas fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
 
         <!-- Project 6 -->
-        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
           <div class="project-image-container">
             <img src="/assets/images/project6.jpg" alt="Fitness Tracker" class="project-image">
           </div>
@@ -185,27 +169,21 @@
               <span class="tech-tag">PWA</span>
             </div>
             <div class="project-actions">
-              <a href="#" class="project-view-btn">
+              <button href="#" class="project-view-btn">
                 <span>View Project</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </a>
+                <i class="fas fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Load More Button -->
+    <!-- Load More / Show Less Button -->
     <div class="projects-cta" data-aos="fade-up" data-aos-delay="800">
-      <button class="custom-btn secondary-btn" (click)="loadMoreProjects()">
+      <button class="custom-btn secondary-btn" (click)="toggleProjects()">
         <span>{{ showAllProjects ? 'Show Less Projects' : 'View More Projects' }}</span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
+        <i class="fas" [class.fa-chevron-up]="showAllProjects" [class.fa-chevron-down]="!showAllProjects"></i>
       </button>
     </div>
   </div>
