@@ -264,19 +264,19 @@
 }
 
 .feature-tag {
-  background: rgba(231, 76, 60, 0.1);
-  color: #e74c3c;
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
   padding: 6px 12px;
   border-radius: 12px;
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid rgba(231, 76, 60, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   transition: all 0.3s ease;
 }
 
 .service-card:hover .feature-tag {
-  background: rgba(231, 76, 60, 0.2);
+  background: rgba(59, 130, 246, 0.2);
   transform: translateY(-2px);
 }
 

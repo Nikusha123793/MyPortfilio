@@ -392,6 +392,7 @@
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    text-align: left;
   }
 
   .profile-image-container {
@@ -406,13 +407,35 @@
 
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 40px;
+    text-align: center;
   }
 
   .footer-profile {
     flex-direction: column;
     text-align: center;
     gap: 20px;
+  }
+
+  .footer-links,
+  .footer-services,
+  .footer-contact {
+    align-items: center;
+  }
+
+  .links-title::after,
+  .services-title::after,
+  .contact-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .contact-item {
+    justify-content: center;
   }
 
   .bottom-content {
@@ -432,7 +455,7 @@
   }
 
   .footer-content {
-    gap: 25px;
+    gap: 35px;
   }
 
   .profile-name {
@@ -452,5 +475,57 @@
   .social-icon {
     width: 36px;
     height: 36px;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .footer-section {
+    padding: 50px 0 15px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+  .profile-image-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 1.125rem;
+  }
+
+  .profile-title {
+    font-size: 0.9rem;
+  }
+
+  .links-list,
+  .services-list {
+    gap: 10px;
+  }
+
+  .links-list li a,
+  .services-list li {
+    font-size: 0.875rem;
+  }
+
+  .contact-item {
+    font-size: 0.875rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .copyright,
+  .footer-credits {
+    font-size: 0.8rem;
   }
 }
